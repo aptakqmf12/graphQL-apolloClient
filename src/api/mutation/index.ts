@@ -6,3 +6,12 @@ export const EDIT_MUTATION = gql`
         }
     }
 `;
+
+export const EDIT_REVIEW = gql`
+  mutation Mutation($locationReview: LocationReviewInput) {
+    submitReview(locationReview: $locationReview) {
+      success
+      message
+    }
+  }
+`;

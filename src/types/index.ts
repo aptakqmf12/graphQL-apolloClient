@@ -4,6 +4,7 @@ export type Location = {
   description: string;
 };
 
-export type LocationsResponse = {
-  locations: Location[];
+export type Review = {
+  comment: string;
+  rating: string;
 };
